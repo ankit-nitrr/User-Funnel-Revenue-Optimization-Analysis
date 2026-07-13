@@ -5,7 +5,8 @@
 ![Power BI](https://img.shields.io/badge/Power_BI-2--Page%20Dashboard-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Status](https://img.shields.io/badge/Project-Complete-brightgreen?style=flat-square)
 
-> 10,000 sessions enter the funnel. Only 1,080 convert. This project traces exactly where the other 8,920 drop off — by channel, device, region, and product — and turns that into a ranked list of the specific segments losing the most revenue, using **SQL** for the business logic and **Power BI** for the decision-ready dashboard.
+> > This project analyzes the complete e-commerce purchase funnel to identify **where users abandon their journey, which customer segments underperform, and what business actions can improve conversion and revenue.** Using SQL for business logic and Power BI for interactive reporting, the project transforms raw event-level data into decision-ready insights for stakeholders.
+
 
 ---
 
@@ -28,13 +29,20 @@
 
 ## 🎯 Problem Statement
 
-An e-commerce business wants to know why only **1 in 10 sessions** ends in a purchase, and where to focus first to fix it:
+An e-commerce business observed that a large number of users were visiting the platform, but far fewer were completing purchases. While high-level KPIs indicated a conversion problem, they did not explain **where users were dropping off in the purchase journey, which customer segments were underperforming, or what business actions should be prioritized to improve revenue.**
 
-1. **Where exactly does the funnel break?** Is the biggest leak at Browse → Cart, Cart → Checkout, or Checkout → Purchase — and how much revenue does that leak represent?
-2. **Is the drop-off the same everywhere, or concentrated?** Do specific channel + device combinations convert far worse than others, and are they high-traffic enough to matter?
-3. **Who is actually buying, and who is walking away with a full cart?** Do repeat visitors convert better than one-time visitors, and what is the total value abandoned at checkout?
+The business wanted to answer three key questions:
 
-This project answers all three by querying the raw event-level data with **SQL** — from basic validation through window functions and multi-CTE segment analysis — and surfacing the findings in a 2-page interactive **Power BI** dashboard.
+1. **Where does the customer journey break down?**
+   Is the largest drop-off occurring between Browse → Add to Cart, Add to Cart → Checkout, or Checkout → Purchase, and which stage should be prioritized for optimization?
+
+2. **Is the problem widespread or concentrated within specific customer segments?**
+   Do particular combinations of marketing channel, device, or region perform significantly worse than others, and are those segments large enough to justify business investment?
+
+3. **Which customer behaviors contribute most to lost revenue?**
+   Do repeat visitors convert better than first-time visitors? How much revenue is being lost due to cart and checkout abandonment?
+
+To answer these questions, I analyzed raw event-level user data using SQL, performing data validation, funnel analysis, revenue analysis, segmentation, window functions, and multi-CTE business queries. The results were then presented in a two-page interactive Power BI dashboard that enables stakeholders to quickly identify bottlenecks, understand customer behavior, and prioritize actions that can improve conversion and revenue.
 
 ---
 
